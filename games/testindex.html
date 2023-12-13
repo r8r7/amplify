@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Load HTML from URL</title>
+</head>
+<body>
+
+<!-- Here is where the content will be loaded -->
+<div id="external-content"></div>
+
+<script>
+  // Fetch the HTML content from the URL
+  fetch('https://paste.ee/r/74hBM/0')
+    .then(response => response.text())
+    .then(data => {
+      // Insert the fetched HTML content into the 'external-content' div
+      document.getElementById('external-content').innerHTML = data;
+    })
+    .catch(error => console.log('Error fetching content:', error));
+</script>
+
+</body>
+</html>
