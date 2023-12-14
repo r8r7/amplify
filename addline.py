@@ -5,8 +5,8 @@ import glob
 def modify_html_files():
     # Define the lines to add to each HTML file
     lines_to_add = [
-        '<!-- usage. -->\n<script src="/../../../../../scripts/everypage.js"></script>\n',
-        '<script src="/../../../../../scripts/everypage2.js"></script>\n<!-- usage. -->\n'
+        '<!-- usage. -->\n<script src="https://raw.githubusercontent.com/r8r7/amplify/main/games/scripts/everypage.js"></script>\n',
+        '<script src="https://raw.githubusercontent.com/r8r7/amplify/main/games/scripts/everypage2.js"></script>\n<!-- usage. -->\n'
     ]
 
     # Define the directory where your HTML files are located
