@@ -1,7 +1,9 @@
-webServices:
-  - name: my-web-service
+services:
+  - type: web
+    name: my-web-service
     buildCommand: echo "No build command specified"
     startCommand: npm run start
     env: {}
-    public: true
-    port: 8081
+    ports:
+      - port: 8081
+        handler: web
